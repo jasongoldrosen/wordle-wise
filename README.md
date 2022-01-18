@@ -18,6 +18,11 @@ Who knows how long the buzz will last? But, while the game is top of mind, I wan
 Puzzle from 2022-01-18 
 
 ```python
+from wordle_wise.api import WordleGame
+
+puzzle = WordleGame()
+puzzle.summary()
+
 # Guess 1
 puzzle.make_guess(guess='ABOUT', result='__G__')
 puzzle.summary()
